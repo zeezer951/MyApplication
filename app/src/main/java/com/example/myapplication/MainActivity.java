@@ -11,6 +11,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 import android.util.Log;
 
+import org.apache.commons.io.FileUtils;
+
 import java.io.File;
 
 import java.nio.charset.Charset;
@@ -90,10 +92,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void loadItems(){
         try{
-            items = new ArrayList<>(FileUtils.readLines(getDataFile(), Charset.defaultCharset());
+            items = new ArrayList<>(FileUtils.readLines(getDataFile(), Charset.defaultCharset()));
         } catch (IOException e){
             Log.e("MainActivity", "error reading items", e);
-            items.new ArrayList<>();
+            items = new ArrayList<>();
     }
     }
 

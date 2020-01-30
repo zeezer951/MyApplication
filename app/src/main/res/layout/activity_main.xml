@@ -29,8 +29,7 @@
         android:layout_toStartOf="@+id/btnAdd"
         android:ems="10"
         android:hint="add an item here!"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:inputType="textPersonName" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvItem"
